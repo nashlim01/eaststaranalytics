@@ -11,11 +11,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Syne:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <!-- NAV -->
 <nav>
@@ -44,10 +46,11 @@
     </div>
   </div>
   <div class="hero-stars" aria-hidden="true"></div>
+  <div class="hero-coords" aria-hidden="true">01°33′N · 110°21′E — KUCHING, SARAWAK</div>
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge">Proudly from Sarawak · Serving Borneo & Beyond</div>
-      <h1 class="hero-headline">Stop Drowning in<br><span class="gold">Manual Work</span></h1>
+      <h1 class="hero-headline">Stop Drowning in <span class="gold">Manual Work</span></h1>
       <div class="hero-divider"></div>
       <p class="hero-sub">We help SMEs across Sarawak, Borneo, and Malaysia eliminate manual work, automate reporting, and unlock real business insight — from Excel and Power BI all the way to AI automation and enterprise data platforms.</p>
       <div class="hero-btns">
@@ -93,17 +96,17 @@
         <div class="kpi-row">
           <div class="kpi-box">
             <div class="kpi-label">Revenue</div>
-            <div class="kpi-val">RM 284k</div>
+            <div class="kpi-val" data-count="284" data-prefix="RM " data-suffix="k">RM 284k</div>
             <div class="kpi-delta up">↑  18%</div>
           </div>
           <div class="kpi-box">
             <div class="kpi-label">Orders</div>
-            <div class="kpi-val">1,042</div>
+            <div class="kpi-val" data-count="1042" data-comma="true">1,042</div>
             <div class="kpi-delta up">↑  7%</div>
           </div>
           <div class="kpi-box">
             <div class="kpi-label">On-Time</div>
-            <div class="kpi-val">94%</div>
+            <div class="kpi-val" data-count="94" data-suffix="%">94%</div>
             <div class="kpi-delta dn">↓  2%</div>
           </div>
         </div>
@@ -140,22 +143,30 @@
 
 <!-- DATA · INSIGHT · INTELLIGENCE · IMPACT STRIP -->
 <section id="pillars" style="padding:0">
-  <div class="pillars-row">
-    <div class="pillar-item">
-      <div class="pillar-num">01</div>
-      <div class="pillar-text">Data</div>
+  <div class="pillars-track">
+    <div class="pillars-group">
+      <div class="pillar-item"><div class="pillar-num">01</div><div class="pillar-text">Data</div></div>
+      <div class="pillar-item"><div class="pillar-num">02</div><div class="pillar-text">Insight</div></div>
+      <div class="pillar-item"><div class="pillar-num">03</div><div class="pillar-text">Intelligence</div></div>
+      <div class="pillar-item"><div class="pillar-num">04</div><div class="pillar-text">Impact</div></div>
     </div>
-    <div class="pillar-item">
-      <div class="pillar-num">02</div>
-      <div class="pillar-text">Insight</div>
+    <div class="pillars-group" aria-hidden="true">
+      <div class="pillar-item"><div class="pillar-num">01</div><div class="pillar-text">Data</div></div>
+      <div class="pillar-item"><div class="pillar-num">02</div><div class="pillar-text">Insight</div></div>
+      <div class="pillar-item"><div class="pillar-num">03</div><div class="pillar-text">Intelligence</div></div>
+      <div class="pillar-item"><div class="pillar-num">04</div><div class="pillar-text">Impact</div></div>
     </div>
-    <div class="pillar-item">
-      <div class="pillar-num">03</div>
-      <div class="pillar-text">Intelligence</div>
+    <div class="pillars-group" aria-hidden="true">
+      <div class="pillar-item"><div class="pillar-num">01</div><div class="pillar-text">Data</div></div>
+      <div class="pillar-item"><div class="pillar-num">02</div><div class="pillar-text">Insight</div></div>
+      <div class="pillar-item"><div class="pillar-num">03</div><div class="pillar-text">Intelligence</div></div>
+      <div class="pillar-item"><div class="pillar-num">04</div><div class="pillar-text">Impact</div></div>
     </div>
-    <div class="pillar-item">
-      <div class="pillar-num">04</div>
-      <div class="pillar-text">Impact</div>
+    <div class="pillars-group" aria-hidden="true">
+      <div class="pillar-item"><div class="pillar-num">01</div><div class="pillar-text">Data</div></div>
+      <div class="pillar-item"><div class="pillar-num">02</div><div class="pillar-text">Insight</div></div>
+      <div class="pillar-item"><div class="pillar-num">03</div><div class="pillar-text">Intelligence</div></div>
+      <div class="pillar-item"><div class="pillar-num">04</div><div class="pillar-text">Impact</div></div>
     </div>
   </div>
 </section>
@@ -163,7 +174,7 @@
 <!-- SERVICES -->
 <section id="services">
   <div class="section-inner">
-    <p class="section-label reveal">What We Do</p>
+    <p class="section-label reveal">01 / What We Do</p>
     <h2 class="section-title reveal reveal-delay-1">The right solution for <span class="gold">your level of growth</span></h2>
     <p class="section-sub reveal reveal-delay-2">Whether you're cleaning up manual processes or scaling to an enterprise data platform — we meet you where you are.</p>
 
@@ -223,7 +234,7 @@
 <!-- WHY US -->
 <section id="why">
   <div class="section-inner">
-    <p class="section-label reveal">Why EastStar</p>
+    <p class="section-label reveal">02 / Why EastStar</p>
     <h2 class="section-title reveal reveal-delay-1">Sarawak roots.<br><span class="gold">Regional reach.</span></h2>
     <p class="section-sub reveal reveal-delay-2" style="color:rgba(255,255,255,0.5)">We understand the realities of running a business in Borneo. From quick-win automations to full data platform builds — our solutions are right-sized, priced fairly, and delivered without the enterprise runaround.</p>
 
@@ -260,7 +271,7 @@
 <!-- INDUSTRIES -->
 <section id="industries">
   <div class="section-inner">
-    <p class="section-label reveal">Industries We Serve</p>
+    <p class="section-label reveal">03 / Industries We Serve</p>
     <h2 class="section-title reveal reveal-delay-1">We understand your <span class="gold">industry's numbers</span></h2>
     <p class="section-sub reveal reveal-delay-2">Our solutions are adapted for the specific reporting and operational needs of Borneo's key business sectors.</p>
 
@@ -292,7 +303,7 @@
 <!-- PROCESS -->
 <section id="process">
   <div class="section-inner">
-    <p class="section-label reveal">How It Works</p>
+    <p class="section-label reveal">04 / How It Works</p>
     <h2 class="section-title reveal reveal-delay-1">From WhatsApp to <span class="gold">working solution</span></h2>
     <p class="section-sub reveal reveal-delay-2">A simple five-step process with clear communication at every stage — no jargon, no surprises.</p>
 
@@ -329,7 +340,7 @@
 <!-- CITIES -->
 <section id="cities">
   <div class="section-inner">
-    <p class="section-label reveal">Service Area</p>
+    <p class="section-label reveal">05 / Service Area</p>
     <h2 class="section-title reveal reveal-delay-1" style="color:#fff">Sarawak-based.<br><span class="gold">Borneo & beyond.</span></h2>
     <p class="section-sub reveal reveal-delay-2">Proudly from Sarawak — and we work with businesses across Borneo, Peninsular Malaysia, and beyond. Fully remote-capable, no travel required.</p>
 
@@ -355,10 +366,42 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <p class="section-label reveal">06 / Common Questions</p>
+    <h2 class="section-title reveal reveal-delay-1">Answers, before <span class="gold">you even ask</span></h2>
+    <p class="section-sub reveal reveal-delay-2">The questions every SME owner asks us in the first WhatsApp message — answered upfront.</p>
+
+    <div class="faq-list">
+      <details class="faq-item reveal">
+        <summary>How much does a typical project cost?<span class="faq-marker" aria-hidden="true"></span></summary>
+        <p>Far less than you'd expect — most Excel automation and dashboard projects cost a fraction of a single ERP licence. After a free consultation we quote one fixed price for the whole project. No hourly billing, no surprises.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-1">
+        <summary>How long until we see results?<span class="faq-marker" aria-hidden="true"></span></summary>
+        <p>Quick-win automations ship in days. Most Power BI dashboards take one to three weeks. Larger data platform builds are delivered in phases, so you see working results early — not after months of waiting.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-2">
+        <summary>Do you work with businesses outside Sarawak?<span class="faq-marker" aria-hidden="true"></span></summary>
+        <p>Yes. We're fully remote-capable and already work with clients across Sabah, Brunei, Labuan, Peninsular Malaysia, and Indonesia. Consultation, build, and handover can all happen online.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-3">
+        <summary>What do we need to prepare before starting?<span class="faq-marker" aria-hidden="true"></span></summary>
+        <p>Just your existing files — even messy ones — and ten minutes to walk us through how you work today. We handle the data cleaning, structuring, and everything technical from there.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Will our team be able to use and maintain it?<span class="faq-marker" aria-hidden="true"></span></summary>
+        <p>Every delivery includes a full walkthrough and documentation, in Bahasa Malaysia or English. You work directly with the person who built your solution, and we stay available after handover.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-inner">
-    <p class="section-label reveal">Get In Touch</p>
+    <p class="section-label reveal">07 / Get In Touch</p>
     <h2 class="section-title reveal reveal-delay-1">Let's talk about <span class="gold">your business</span></h2>
 
     <div class="contact-grid">
@@ -463,6 +506,7 @@
         <a href="#industries">Industries</a>
         <a href="#process">Process</a>
         <a href="#cities">Service Area</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -485,7 +529,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="footer-copy">© 2024 EastStar Analytics. All rights reserved.</div>
+    <div class="footer-copy">© 2026 EastStar Analytics. All rights reserved.</div>
     <div class="footer-reg">Business Automation & Data Consulting · Sarawak, Malaysia</div>
   </div>
 </footer>
@@ -497,6 +541,5 @@
 </a>
 
 <script src="script.js"></script>
-</script>
 </body>
 </html>

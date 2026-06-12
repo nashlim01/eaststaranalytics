@@ -16,7 +16,11 @@
       --border:   #dde1e7;
       --wa:       #25D366;
       --gold-glow: rgba(212,160,23,0.18);
+      --font-display: 'Syne', 'Montserrat', sans-serif;
+      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
     }
+
+    ::selection { background: var(--gold); color: var(--navy); }
 
     html { scroll-behavior: smooth; }
 
@@ -229,7 +233,7 @@
       position: relative; z-index: 1;
       max-width: 1120px; margin: 0 auto;
       padding: 80px 6vw;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+      display: grid; grid-template-columns: 1.15fr 1fr; gap: 64px; align-items: center;
     }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
@@ -253,12 +257,13 @@
       50% { opacity: 0.4; transform: scale(1.5); }
     }
     .hero-headline {
-      font-size: clamp(2.1rem, 3.8vw, 3.2rem);
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
       font-weight: 800;
-      line-height: 1.12;
+      line-height: 1.1;
       color: #fff;
       margin-bottom: 10px;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
     .hero-headline .gold {
       color: var(--gold);
@@ -397,20 +402,31 @@
       background: var(--gold);
       padding: 0;
     }
-    .pillars-row {
-      max-width: 1120px; margin: 0 auto;
-      display: flex; flex-wrap: wrap;
-      padding: 0 6vw;
+    .pillars-track {
+      display: flex; width: max-content;
+      animation: pillars-marquee 16s linear infinite;
     }
+    #pillars:hover .pillars-track { animation-play-state: paused; }
+    .pillars-group { display: flex; }
     .pillar-item {
-      flex: 1; min-width: 140px;
-      padding: 16px 20px;
-      display: flex; align-items: center; gap: 10px;
+      padding: 16px 34px;
+      display: flex; align-items: center; gap: 12px;
       border-right: 1px solid rgba(13,27,42,0.15);
+      white-space: nowrap;
     }
-    .pillar-item:last-child { border-right: none; }
-    .pillar-num { font-size: 1.3rem; font-weight: 900; color: rgba(13,27,42,0.2); line-height: 1; }
-    .pillar-text { font-size: 0.72rem; font-weight: 800; color: var(--navy); letter-spacing: 0.12em; text-transform: uppercase; }
+    .pillar-num {
+      font-family: var(--font-mono);
+      font-size: 1.1rem; font-weight: 600;
+      color: rgba(13,27,42,0.3); line-height: 1;
+    }
+    .pillar-text {
+      font-family: var(--font-mono);
+      font-size: 0.75rem; font-weight: 600;
+      color: var(--navy); letter-spacing: 0.18em; text-transform: uppercase;
+    }
+    @keyframes pillars-marquee {
+      to { transform: translateX(-25%); }
+    }
 
     /* ─ ─  SECTION SHELL ─ ─  */
     section { padding: 90px 6vw; }
@@ -426,10 +442,11 @@
       background: var(--gold); flex-shrink: 0;
     }
     .section-title {
-      font-size: clamp(1.75rem, 2.8vw, 2.5rem);
-      font-weight: 800; letter-spacing: -0.01em;
-      color: var(--navy); line-height: 1.2;
-      max-width: 580px;
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 2.7vw, 2.4rem);
+      font-weight: 700; letter-spacing: -0.015em;
+      color: var(--navy); line-height: 1.18;
+      max-width: 620px;
     }
     .section-title .gold { color: var(--gold); }
     .section-sub {
@@ -703,10 +720,11 @@
       margin-bottom: 14px;
     }
     .cta-title {
-      font-size: clamp(1.9rem, 3.5vw, 2.9rem);
-      font-weight: 900; color: var(--navy);
-      line-height: 1.15; margin-bottom: 14px;
-      letter-spacing: -0.01em;
+      font-family: var(--font-display);
+      font-size: clamp(1.85rem, 3.4vw, 2.8rem);
+      font-weight: 800; color: var(--navy);
+      line-height: 1.12; margin-bottom: 14px;
+      letter-spacing: -0.015em;
     }
     .cta-sub { font-size: 0.93rem; color: rgba(13,27,42,0.65); margin-bottom: 36px; font-weight: 500; }
     .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; position: relative; }
@@ -841,6 +859,155 @@
     }
     .industry-icon svg { width: 28px; height: 28px; }
 
+    /* ─ ─  MONO DATA ACCENTS ─ ─  */
+    .section-label,
+    .hero-badge,
+    .cta-eyebrow,
+    .cities-group-label,
+    .footer-links-title,
+    .card-title, .card-badge,
+    .kpi-label, .kpi-delta,
+    .tag,
+    .form-group label {
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+    .kpi-val {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      font-size: 1.1rem;
+    }
+    .why-num, .step-num-wrap {
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+
+    /* Hero coordinates etching */
+    .hero-coords {
+      position: absolute;
+      bottom: 26px; left: 6vw;
+      font-family: var(--font-mono);
+      font-size: 0.62rem; font-weight: 500;
+      letter-spacing: 0.22em;
+      color: rgba(212,160,23,0.45);
+      z-index: 1;
+      pointer-events: none;
+    }
+    .hero-coords::before {
+      content: '';
+      display: inline-block;
+      width: 26px; height: 1px;
+      background: rgba(212,160,23,0.35);
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+
+    /* Scroll progress hairline */
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; z-index: 300;
+      height: 2px; width: 0;
+      background: linear-gradient(90deg, var(--gold-dk), var(--gold), var(--gold-lt));
+      box-shadow: 0 0 8px rgba(212,160,23,0.6);
+      pointer-events: none;
+    }
+
+    /* Scrollspy: active nav link */
+    .nav-links a.active { color: var(--gold); }
+    .nav-links a:not(.nav-cta) {
+      position: relative;
+    }
+    .nav-links a:not(.nav-cta)::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -6px;
+      width: 100%; height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease;
+    }
+    .nav-links a.active:not(.nav-cta)::after { transform: scaleX(1); }
+
+    /* HUD corner brackets on service cards */
+    .service-card::before,
+    .service-card::after {
+      content: '';
+      position: absolute;
+      width: 16px; height: 16px;
+      border: 1.5px solid var(--gold);
+      opacity: 0;
+      transition: opacity .25s ease, transform .25s ease;
+      pointer-events: none;
+    }
+    .service-card::before {
+      top: 10px; left: 10px;
+      border-right: none; border-bottom: none;
+      transform: translate(4px, 4px);
+    }
+    .service-card::after {
+      bottom: 10px; right: 10px;
+      border-left: none; border-top: none;
+      transform: translate(-4px, -4px);
+    }
+    .service-card:hover::before,
+    .service-card:hover::after {
+      opacity: 0.8;
+      transform: translate(0, 0);
+    }
+
+    /* ─ ─  FAQ ─ ─  */
+    #faq { background: var(--white); }
+    .faq-list {
+      margin-top: 44px;
+      max-width: 760px;
+      border-top: 1px solid var(--border);
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 18px;
+      padding: 20px 4px;
+      font-weight: 700; font-size: 0.92rem;
+      color: var(--navy);
+      transition: color .2s;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover { color: var(--gold-dk); }
+    .faq-marker {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      position: relative;
+      transition: border-color .25s, background .25s;
+    }
+    .faq-marker::before,
+    .faq-marker::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 10px; height: 1.5px;
+      background: var(--gold-dk);
+      transform: translate(-50%, -50%);
+      transition: transform .25s ease;
+    }
+    .faq-marker::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .faq-item[open] .faq-marker { background: var(--navy); border-color: var(--navy); }
+    .faq-item[open] .faq-marker::before,
+    .faq-item[open] .faq-marker::after {
+      background: var(--gold);
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    .faq-item p {
+      padding: 0 40px 22px 4px;
+      font-size: 0.875rem; color: var(--muted); line-height: 1.75;
+      max-width: 640px;
+    }
+
     /* ─ ─  FUTURISTIC TOUCHES ─ ─  */
     /* Gold sheen sweeping across highlighted headline words */
     .hero-headline .gold,
@@ -914,6 +1081,7 @@
       .section-title .gold,
       .bar,
       #pillars::after,
+      .pillars-track,
       .hero-badge::before,
       .float-wa {
         animation: none;
