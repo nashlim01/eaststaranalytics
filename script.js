@@ -16,6 +16,12 @@
     setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'none'; }, 100);
   });
 
+  // Nav: solid glass once scrolled past the top of the hero
+  const navEl = document.querySelector('nav');
+  const onScroll = () => navEl.classList.toggle('scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
   // Form submit →  WhatsApp
   function submitForm() {
     const name    = document.getElementById('fname').value.trim();
