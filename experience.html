@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EastStar Analytics — A Data Experience | Sarawak, Borneo</title>
+  <meta name="description" content="EastStar Analytics — a Sarawak-based data & automation studio. Step inside an interactive experience: from manual chaos to data, insight, intelligence, and impact." />
+  <meta property="og:title" content="EastStar Analytics — A Data Experience" />
+  <meta property="og:description" content="Data · Insight · Intelligence · Impact. An immersive introduction to the studio empowering Sarawak." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="experience.css" />
+</head>
+<body>
+
+<!-- ░░ PRELOADER ░░ -->
+<div class="preloader" id="preloader">
+  <div class="pre-inner">
+    <div class="pre-mark">
+      <img src="logo-mark.png" alt="EastStar Analytics" />
+    </div>
+    <div class="pre-meta">
+      <span class="pre-label">EASTSTAR ANALYTICS</span>
+      <span class="pre-sub">Initialising experience</span>
+    </div>
+    <div class="pre-bar"><div class="pre-bar-fill" id="preBarFill"></div></div>
+    <div class="pre-count"><span id="preCount">0</span><span class="pre-pct">%</span></div>
+  </div>
+  <button class="pre-skip" id="preSkip">Skip intro →</button>
+</div>
+
+<!-- ░░ CUSTOM CURSOR ░░ -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <span class="cursor-label"></span>
+</div>
+
+<!-- ░░ SCROLL PROGRESS ░░ -->
+<div class="scroll-rail" aria-hidden="true"><div class="scroll-rail-fill" id="scrollRailFill"></div></div>
+
+<!-- ░░ NAV ░░ -->
+<header class="exp-nav" id="expNav">
+  <a href="#top" class="exp-brand" data-cursor="brand">
+    <span class="brand-east">East</span><span class="brand-star">Star</span>
+    <span class="brand-tag">ANALYTICS</span>
+  </a>
+  <nav class="exp-menu">
+    <a href="#about" data-nav>About</a>
+    <a href="#pillars" data-nav>Approach</a>
+    <a href="#services" data-nav>Services</a>
+    <a href="#impact" data-nav>Impact</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <a href="https://wa.me/60138425529?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20EastStar%20Analytics" target="_blank" rel="noopener" class="exp-cta" data-cursor="cta" data-magnetic>
+    <span>Let's talk</span>
+  </a>
+  <button class="exp-burger" id="expBurger" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<!-- ░░ MOBILE MENU ░░ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-mnav>About</a>
+  <a href="#pillars" data-mnav>Approach</a>
+  <a href="#services" data-mnav>Services</a>
+  <a href="#impact" data-mnav>Impact</a>
+  <a href="#contact" data-mnav>Contact</a>
+  <a href="https://wa.me/60138425529" target="_blank" rel="noopener" class="mobile-wa">WhatsApp Us</a>
+</div>
+
+<main id="top">
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-fade>
+        <span class="hero-coord">01°33′N 110°21′E</span>
+        <span class="hero-dot"></span>
+        <span>Sarawak · Borneo · Beyond</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="word" data-split>From</span> <span class="word" data-split>manual</span> <span class="word" data-split>chaos</span></span>
+        <span class="line"><span class="word gold" data-split>to</span> <span class="word gold" data-split>measurable</span> <span class="word gold" data-split>impact.</span></span>
+      </h1>
+
+      <p class="hero-lead" data-fade>
+        We're a Sarawak-based data &amp; automation studio. We turn spreadsheets,
+        scattered systems and gut-feel decisions into living dashboards and
+        intelligent automation — for businesses across Borneo and beyond.
+      </p>
+
+      <div class="hero-actions" data-fade>
+        <a href="#about" class="btn-primary" data-cursor="explore" data-magnetic><span>Begin the journey</span></a>
+        <a href="https://wa.me/60138425529?text=Hi%2C%20I%27d%20like%20a%20free%20consultation%20with%20EastStar%20Analytics" target="_blank" rel="noopener" class="btn-ghost" data-magnetic><span>Book a consult</span></a>
+      </div>
+    </div>
+
+    <div class="hero-scrollcue" data-fade>
+      <span>Scroll</span>
+      <div class="cue-line"><div class="cue-dot"></div></div>
+    </div>
+
+    <div class="hero-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>DATA</span><i>✦</i><span>INSIGHT</span><i>✦</i><span>INTELLIGENCE</span><i>✦</i><span>IMPACT</span><i>✦</i>
+        <span>DATA</span><i>✦</i><span>INSIGHT</span><i>✦</i><span>INTELLIGENCE</span><i>✦</i><span>IMPACT</span><i>✦</i>
+        <span>DATA</span><i>✦</i><span>INSIGHT</span><i>✦</i><span>INTELLIGENCE</span><i>✦</i><span>IMPACT</span><i>✦</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT / MANIFESTO ░░ -->
+  <section class="manifesto" id="about">
+    <div class="mani-index"><span>01</span> — Who we are</div>
+    <p class="mani-text">
+      <span class="w">EastStar</span> <span class="w">Analytics</span> <span class="w">helps</span>
+      <span class="w">small</span> <span class="w">and</span> <span class="w">medium</span>
+      <span class="w">businesses</span> <span class="w">stop</span> <span class="w">drowning</span>
+      <span class="w">in</span> <span class="w">manual</span> <span class="w">work</span> <span class="w">—</span>
+      <span class="w">and</span> <span class="w">start</span> <span class="w">running</span>
+      <span class="w">on</span> <span class="w">clear,</span> <span class="w">trustworthy</span>
+      <span class="w gold-w">numbers.</span>
+    </p>
+    <div class="mani-foot">
+      <p>Born in Kuching. Built for Borneo. We pair local understanding with enterprise-grade tooling — Excel, Power BI, Databricks and AI — right-sized for the way you actually work.</p>
+    </div>
+  </section>
+
+  <!-- ░░ PILLARS / APPROACH ░░ -->
+  <section class="pillars" id="pillars">
+    <div class="pillars-head">
+      <div class="sec-index"><span>02</span> — The approach</div>
+      <h2 class="sec-title">Four steps from <em>raw</em> to <em>remarkable</em>.</h2>
+    </div>
+
+    <div class="pillar-list">
+      <article class="pillar" data-pillar>
+        <div class="pillar-no">01</div>
+        <h3>Data</h3>
+        <p>We gather and clean the mess — exports, spreadsheets, scattered systems — into one trustworthy source of truth.</p>
+        <div class="pillar-line"></div>
+      </article>
+      <article class="pillar" data-pillar>
+        <div class="pillar-no">02</div>
+        <h3>Insight</h3>
+        <p>Live dashboards reveal what the numbers were hiding: where money leaks, where time goes, what's actually working.</p>
+        <div class="pillar-line"></div>
+      </article>
+      <article class="pillar" data-pillar>
+        <div class="pillar-no">03</div>
+        <h3>Intelligence</h3>
+        <p>Automation and AI take over the repetitive work — reports build themselves, alerts fire before problems grow.</p>
+        <div class="pillar-line"></div>
+      </article>
+      <article class="pillar" data-pillar>
+        <div class="pillar-no">04</div>
+        <h3>Impact</h3>
+        <p>Hours returned every week. Decisions made with confidence. A business that scales without the chaos.</p>
+        <div class="pillar-line"></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ░░ SERVICES (HORIZONTAL) ░░ -->
+  <section class="services" id="services">
+    <div class="services-pin" id="servicesPin">
+      <div class="services-track" id="servicesTrack">
+
+        <div class="svc-intro">
+          <div class="sec-index"><span>03</span> — What we build</div>
+          <h2 class="sec-title">Solutions sized<br>to your stage<br>of growth.</h2>
+          <p>Drag or scroll →</p>
+        </div>
+
+        <article class="svc-card" data-svc>
+          <div class="svc-num">S/01</div>
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>Excel Automation</h3>
+          <p>Kill repetitive manual work with custom macros, automated workflows and self-building reports — shaped around your real process.</p>
+          <ul><li>VBA &amp; Office Scripts</li><li>Auto-reporting</li><li>Data validation</li></ul>
+        </article>
+
+        <article class="svc-card" data-svc>
+          <div class="svc-num">S/02</div>
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Power BI Dashboards</h3>
+          <p>Live, interactive dashboards that replace manual status updates — instant visibility into sales, operations and KPIs.</p>
+          <ul><li>KPI tracking</li><li>Sales analytics</li><li>Ops monitoring</li></ul>
+        </article>
+
+        <article class="svc-card" data-svc>
+          <div class="svc-num">S/03</div>
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Data Intelligence Platform</h3>
+          <p>Ready to scale beyond spreadsheets? We design modern data platforms — Databricks lakehouse, governed and analytics-ready.</p>
+          <ul><li>Databricks</li><li>Data lakehouse</li><li>BI strategy</li></ul>
+        </article>
+
+        <article class="svc-card" data-svc>
+          <div class="svc-num">S/04</div>
+          <div class="svc-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12l4-4"/><circle cx="18" cy="6" r="3"/></svg>
+          </div>
+          <h3>AI Automation</h3>
+          <p>Put AI on the tedious work — document processing, summaries, extraction — so your team decides instead of data-enters.</p>
+          <ul><li>Doc processing</li><li>Auto-summaries</li><li>Smart reports</li></ul>
+        </article>
+
+        <article class="svc-card svc-cta" data-svc>
+          <h3>Not sure where you fit?</h3>
+          <p>Tell us your biggest reporting or data headache. We'll point you to the right starting line — free.</p>
+          <a href="https://wa.me/60138425529?text=Hi%2C%20I%27m%20not%20sure%20which%20service%20I%20need%20%E2%80%94%20can%20you%20help%3F" target="_blank" rel="noopener" class="btn-primary" data-magnetic><span>Ask us anything</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ IMPACT / STATS ░░ -->
+  <section class="impact" id="impact">
+    <div class="sec-index"><span>04</span> — The impact</div>
+    <h2 class="sec-title impact-title">Numbers our clients<br>actually feel.</h2>
+
+    <div class="stat-grid">
+      <div class="stat" data-stat>
+        <div class="stat-num"><span data-count="8" data-suffix="">0</span><i>hrs</i></div>
+        <div class="stat-cap">Saved per week, per team — manual work eliminated.</div>
+      </div>
+      <div class="stat" data-stat>
+        <div class="stat-num"><span data-count="23" data-prefix="+" data-suffix="%">0</span></div>
+        <div class="stat-cap">Average revenue lift after reporting was automated.</div>
+      </div>
+      <div class="stat" data-stat>
+        <div class="stat-num"><span data-count="94" data-suffix="%">0</span></div>
+        <div class="stat-cap">On-time delivery once operations went live on dashboards.</div>
+      </div>
+      <div class="stat" data-stat>
+        <div class="stat-num"><span data-count="100" data-suffix="%">0</span></div>
+        <div class="stat-cap">Remote-capable — Sarawak, Sabah, Brunei, Peninsula &amp; beyond.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ WHY US ░░ -->
+  <section class="why" id="why">
+    <div class="why-head">
+      <div class="sec-index"><span>05</span> — Why EastStar</div>
+      <h2 class="sec-title">Enterprise thinking,<br>without the enterprise runaround.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item" data-reveal><span class="why-k">Local roots, wide reach</span><p>Kuching-based, serving all of Borneo and beyond. Fully remote-capable, no travel required.</p></div>
+      <div class="why-item" data-reveal><span class="why-k">A fraction of ERP cost</span><p>Get 80% of the value of SAP or Oracle, tailored to your real workflow — not a generic template.</p></div>
+      <div class="why-item" data-reveal><span class="why-k">Delivered in days, not months</span><p>Most projects ship in days to weeks. See real results before your next review cycle.</p></div>
+      <div class="why-item" data-reveal><span class="why-k">Talk to the builder</span><p>You work directly with the person who builds your solution — never a helpdesk ticket queue.</p></div>
+    </div>
+  </section>
+
+  <!-- ░░ INDUSTRIES MARQUEE ░░ -->
+  <section class="industries" aria-label="Industries we serve">
+    <div class="ind-marquee">
+      <div class="ind-track">
+        <span>Logistics</span><i>/</i><span>Construction</span><i>/</i><span>Oil &amp; Gas Vendors</span><i>/</i><span>Trading</span><i>/</i><span>Manufacturing</span><i>/</i>
+        <span>Logistics</span><i>/</i><span>Construction</span><i>/</i><span>Oil &amp; Gas Vendors</span><i>/</i><span>Trading</span><i>/</i><span>Manufacturing</span><i>/</i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT / CTA ░░ -->
+  <section class="contact" id="contact">
+    <canvas class="contact-canvas" id="contactCanvas" aria-hidden="true"></canvas>
+    <div class="contact-inner">
+      <div class="sec-index light"><span>06</span> — Let's begin</div>
+      <h2 class="contact-title" data-split-lines>
+        <span class="cl">Ready to turn your</span>
+        <span class="cl">data into your <em>edge?</em></span>
+      </h2>
+      <p class="contact-lead">One WhatsApp message is all it takes. Tell us your biggest data or operational headache — we'll reply the same day.</p>
+      <a href="https://wa.me/60138425529?text=Hi%20EastStar%20Analytics%2C%20I%27d%20like%20to%20book%20a%20free%20consultation" target="_blank" rel="noopener" class="btn-mega" data-cursor="whatsapp" data-magnetic>
+        <span class="btn-mega-label">Start the conversation</span>
+        <span class="btn-mega-icon">→</span>
+      </a>
+      <div class="contact-meta">
+        <a href="https://wa.me/60138425529" target="_blank" rel="noopener">+60 13-842 5529</a>
+        <span>Sarawak, Malaysia · Remote across Borneo &amp; beyond</span>
+        <span>Bahasa Malaysia &amp; English</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="exp-footer">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="foot-word"><span class="brand-east">East</span><span class="brand-star">Star</span></span>
+        <span class="foot-tag">DATA · INSIGHT · INTELLIGENCE · IMPACT</span>
+      </div>
+      <div class="foot-links">
+        <a href="index.html" data-magnetic>Classic site ↗</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 EastStar Analytics. Empowering Sarawak.</span>
+      <span>Built in Kuching · 01°33′N 110°21′E</span>
+    </div>
+  </footer>
+
+</main>
+
+<!-- libs (vendored locally — no CDN dependency) -->
+<script src="libs/three.min.js"></script>
+<script src="libs/gsap.min.js"></script>
+<script src="libs/ScrollTrigger.min.js"></script>
+<script src="libs/lenis.min.js"></script>
+<script src="experience.js"></script>
+</body>
+</html>

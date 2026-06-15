@@ -64,6 +64,14 @@
       letter-spacing: 0.05em; text-transform: uppercase;
     }
     .nav-links a:hover { color: var(--gold); }
+    .nav-exp {
+      color: var(--gold) !important;
+      border: 1px solid rgba(212,160,23,0.4);
+      padding: 8px 14px; border-radius: 6px;
+      text-transform: none !important; letter-spacing: 0.02em !important;
+      transition: background .2s, color .2s !important;
+    }
+    .nav-exp:hover { background: var(--gold); color: var(--navy) !important; }
     .nav-cta {
       background: var(--wa) !important;
       color: #fff !important;
