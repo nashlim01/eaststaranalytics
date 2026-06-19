@@ -1,0 +1,5 @@
+# Local Claude Code tooling (not site content)
+.claude/skills/
+
+# OS junk
+.DS_Store

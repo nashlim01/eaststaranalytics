@@ -1,0 +1,484 @@
+{
+ "currency": "RM",
+ "company": "Borneo Hardware Trading Sdn Bhd",
+ "fullnames": {
+  "Jan": "January",
+  "Feb": "February",
+  "Mar": "March",
+  "Apr": "April",
+  "May": "May",
+  "Jun": "June",
+  "Jul": "July",
+  "Aug": "August",
+  "Sep": "September",
+  "Oct": "October",
+  "Nov": "November",
+  "Dec": "December"
+ },
+ "fullnames_bm": {
+  "Jan": "Januari",
+  "Feb": "Februari",
+  "Mar": "Mac",
+  "Apr": "April",
+  "May": "Mei",
+  "Jun": "Jun",
+  "Jul": "Julai",
+  "Aug": "Ogos",
+  "Sep": "September",
+  "Oct": "Oktober",
+  "Nov": "November",
+  "Dec": "Disember"
+ },
+ "order": [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec"
+ ],
+ "months": {
+  "Jan": {
+   "revenue": 90308,
+   "orders": 51,
+   "avg": 1771,
+   "outstanding": 60115,
+   "outstanding_pct": 67,
+   "top_cat": [
+    "Paint & Finishes",
+    66
+   ],
+   "top_rep": [
+    "Mohd Idris",
+    60893
+   ],
+   "top_branch": [
+    "Kuching",
+    75853
+   ],
+   "weak_branch": [
+    "Sibu",
+    3020
+   ],
+   "top_product": [
+    "Emulsion Paint 18L",
+    59786
+   ],
+   "top_customer": [
+    "Greenfield Property",
+    52851
+   ],
+   "mom": null,
+   "prev": null
+  },
+  "Feb": {
+   "revenue": 105734,
+   "orders": 46,
+   "avg": 2299,
+   "outstanding": 9013,
+   "outstanding_pct": 9,
+   "top_cat": [
+    "Tools & Hardware",
+    32
+   ],
+   "top_rep": [
+    "Catherine Wong",
+    51215
+   ],
+   "top_branch": [
+    "Kuching",
+    45621
+   ],
+   "weak_branch": [
+    "Bintulu",
+    3665
+   ],
+   "top_product": [
+    "Cordless Drill",
+    33764
+   ],
+   "top_customer": [
+    "Greenfield Property",
+    28880
+   ],
+   "mom": 17,
+   "prev": "Jan"
+  },
+  "Mar": {
+   "revenue": 85249,
+   "orders": 51,
+   "avg": 1672,
+   "outstanding": 19439,
+   "outstanding_pct": 23,
+   "top_cat": [
+    "Cement & Aggregates",
+    35
+   ],
+   "top_rep": [
+    "Rosli bin Osman",
+    34619
+   ],
+   "top_branch": [
+    "Miri",
+    28354
+   ],
+   "weak_branch": [
+    "Sibu",
+    13383
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    25918
+   ],
+   "top_customer": [
+    "Hock Seng Construction",
+    18654
+   ],
+   "mom": -19,
+   "prev": "Feb"
+  },
+  "Apr": {
+   "revenue": 145517,
+   "orders": 51,
+   "avg": 2853,
+   "outstanding": 1520,
+   "outstanding_pct": 1,
+   "top_cat": [
+    "Cement & Aggregates",
+    72
+   ],
+   "top_rep": [
+    "Rosli bin Osman",
+    114973
+   ],
+   "top_branch": [
+    "Miri",
+    98929
+   ],
+   "weak_branch": [
+    "Bintulu",
+    8699
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    98591
+   ],
+   "top_customer": [
+    "Bintulu Industrial Trading",
+    83551
+   ],
+   "mom": 71,
+   "prev": "Mar"
+  },
+  "May": {
+   "revenue": 132254,
+   "orders": 62,
+   "avg": 2133,
+   "outstanding": 7181,
+   "outstanding_pct": 5,
+   "top_cat": [
+    "Cement & Aggregates",
+    40
+   ],
+   "top_rep": [
+    "Mohd Idris",
+    65907
+   ],
+   "top_branch": [
+    "Kuching",
+    83942
+   ],
+   "weak_branch": [
+    "Bintulu",
+    4103
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    47718
+   ],
+   "top_customer": [
+    "Kuching DIY Mart",
+    55923
+   ],
+   "mom": -9,
+   "prev": "Apr"
+  },
+  "Jun": {
+   "revenue": 130527,
+   "orders": 73,
+   "avg": 1788,
+   "outstanding": 36977,
+   "outstanding_pct": 28,
+   "top_cat": [
+    "Cement & Aggregates",
+    46
+   ],
+   "top_rep": [
+    "Rosli bin Osman",
+    37730
+   ],
+   "top_branch": [
+    "Miri",
+    44367
+   ],
+   "weak_branch": [
+    "Sibu",
+    20345
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    47105
+   ],
+   "top_customer": [
+    "Borneo Builders Sdn Bhd",
+    26607
+   ],
+   "mom": -1,
+   "prev": "May"
+  },
+  "Jul": {
+   "revenue": 143719,
+   "orders": 76,
+   "avg": 1891,
+   "outstanding": 16553,
+   "outstanding_pct": 12,
+   "top_cat": [
+    "Steel & Metal",
+    53
+   ],
+   "top_rep": [
+    "Lim Ah Hock",
+    76260
+   ],
+   "top_branch": [
+    "Miri",
+    69315
+   ],
+   "weak_branch": [
+    "Sibu",
+    13412
+   ],
+   "top_product": [
+    "Wire Nails 50kg",
+    62702
+   ],
+   "top_customer": [
+    "Hock Seng Construction",
+    51229
+   ],
+   "mom": 10,
+   "prev": "Jun"
+  },
+  "Aug": {
+   "revenue": 76647,
+   "orders": 61,
+   "avg": 1257,
+   "outstanding": 4988,
+   "outstanding_pct": 7,
+   "top_cat": [
+    "Paint & Finishes",
+    21
+   ],
+   "top_rep": [
+    "Ahmad Faizal",
+    30315
+   ],
+   "top_branch": [
+    "Kuching",
+    38729
+   ],
+   "weak_branch": [
+    "Bintulu",
+    4812
+   ],
+   "top_product": [
+    "Emulsion Paint 18L",
+    16394
+   ],
+   "top_customer": [
+    "Eastwood Contractors",
+    13846
+   ],
+   "mom": -47,
+   "prev": "Jul"
+  },
+  "Sep": {
+   "revenue": 143360,
+   "orders": 67,
+   "avg": 2140,
+   "outstanding": 29880,
+   "outstanding_pct": 21,
+   "top_cat": [
+    "Cement & Aggregates",
+    62
+   ],
+   "top_rep": [
+    "Catherine Wong",
+    67068
+   ],
+   "top_branch": [
+    "Kuching",
+    107311
+   ],
+   "weak_branch": [
+    "Sibu",
+    7701
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    79715
+   ],
+   "top_customer": [
+    "Greenfield Property",
+    62857
+   ],
+   "mom": 87,
+   "prev": "Aug"
+  },
+  "Oct": {
+   "revenue": 100644,
+   "orders": 67,
+   "avg": 1502,
+   "outstanding": 22434,
+   "outstanding_pct": 22,
+   "top_cat": [
+    "Cement & Aggregates",
+    41
+   ],
+   "top_rep": [
+    "Rosli bin Osman",
+    44945
+   ],
+   "top_branch": [
+    "Kuching",
+    41371
+   ],
+   "weak_branch": [
+    "Sibu",
+    5094
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    26386
+   ],
+   "top_customer": [
+    "Kuching DIY Mart",
+    19870
+   ],
+   "mom": -30,
+   "prev": "Sep"
+  },
+  "Nov": {
+   "revenue": 81463,
+   "orders": 58,
+   "avg": 1405,
+   "outstanding": 5646,
+   "outstanding_pct": 7,
+   "top_cat": [
+    "Steel & Metal",
+    46
+   ],
+   "top_rep": [
+    "Lim Ah Hock",
+    34772
+   ],
+   "top_branch": [
+    "Kuching",
+    37130
+   ],
+   "weak_branch": [
+    "Bintulu",
+    13975
+   ],
+   "top_product": [
+    "Wire Nails 50kg",
+    27772
+   ],
+   "top_customer": [
+    "Sarawak Renovation Works",
+    21600
+   ],
+   "mom": -19,
+   "prev": "Oct"
+  },
+  "Dec": {
+   "revenue": 103602,
+   "orders": 52,
+   "avg": 1992,
+   "outstanding": 53229,
+   "outstanding_pct": 51,
+   "top_cat": [
+    "Cement & Aggregates",
+    57
+   ],
+   "top_rep": [
+    "Catherine Wong",
+    64684
+   ],
+   "top_branch": [
+    "Kuching",
+    82646
+   ],
+   "weak_branch": [
+    "Bintulu",
+    1061
+   ],
+   "top_product": [
+    "Red Brick (per 1000)",
+    47311
+   ],
+   "top_customer": [
+    "Miri Coastal Developments",
+    43187
+   ],
+   "mom": 27,
+   "prev": "Nov"
+  }
+ },
+ "fy": {
+  "revenue": 1339023,
+  "orders": 715,
+  "avg": 1873,
+  "outstanding": 266975,
+  "outstanding_pct": 20,
+  "top_cat": [
+   "Cement & Aggregates",
+   39
+  ],
+  "top_rep": [
+   "Rosli bin Osman",
+   333328
+  ],
+  "top_branch": [
+   "Kuching",
+   625629
+  ],
+  "weak_branch": [
+   "Bintulu",
+   167415
+  ],
+  "top_product": [
+   "Red Brick (per 1000)",
+   430529
+  ],
+  "top_customer": [
+   "Greenfield Property",
+   172690
+  ],
+  "best_month": [
+   "Apr",
+   145517
+  ],
+  "worst_month": [
+   "Aug",
+   76647
+  ],
+  "avg_month": 111585
+ }
+}
