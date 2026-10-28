@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "eaststar-static",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4173", "--directory", "/Users/nash/Desktop/eaststar"],
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "-l", "4173", "/Users/nash/Desktop/eaststar"],
       "port": 4173
     }
   ]
